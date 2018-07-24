@@ -1,5 +1,4 @@
 highlight Search guibg='Purple' guifg='NONE'
-autocmd BufWritePost .vimrc source %
 syntax on
 filetype plugin indent on
 inoremap jk <ESC>
@@ -23,6 +22,10 @@ Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 call plug#end()
+
+" File-specific settings"
+autocmd BufWritePost .vimrc source %
+autocmd BufWritePost .vimrc :!gitu-zvimconfig
 
 " Key Rebinding
 nmap <silent> <A-Left> <C-w>h
