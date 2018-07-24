@@ -6,6 +6,7 @@ let mapleader = "\<Space>"
 set number relativenumber
 
 " Settings
+set shellcmdflag=-ic "Use .bashrc
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 set showcmd ic hls is
