@@ -27,7 +27,7 @@ call plug#end()
 
 " File-specific settings"
 autocmd BufWritePost .vimrc source %
-autocmd BufWritePost .vimrc :!git pull && git add . && git commit -m "Standard update" && git push 'https://Zach332:123shift@github.com/Zach332/zvimconfig.git'
+autocmd BufWritePost .vimrc :!cd ~/Documents/Git/configs/ && git pull && git add . && git commit -m "Standard update" && git push 'https://Zach332:123shift@github.com/Zach332/zvimconfig.git'
 
 " Key Rebinding
 nmap <silent> <A-Left> <C-w>h
