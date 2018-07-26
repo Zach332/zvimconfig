@@ -40,3 +40,10 @@ nnoremap <leader>r :tabprevious<CR>
 
 " Navigation
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
+
+" Other settings
+autocmd Filetype java set makeprg=javac\ %
+set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
+map <F9> :make<Return>:copen<Return>
+map <F10> :cprevious<Return>
+map <F11> :cnext<Return>
