@@ -6,7 +6,6 @@ let mapleader = "\<Space>"
 set number relativenumber
 
 " Settings
-let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 set shell=bash\ --login
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
