@@ -42,7 +42,7 @@ nnoremap <leader>r :tabprevious<CR>
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
 
 " Other
-set makeprg=vimAnt
+set makeprg=/usr/local/bin/ant -Dbuild.compiler.emacs=true -quiet -find build.xml ${*:-classes} 2>&1 | grep '\[javac\]'
 
  set efm=\ %#[javac]\ %#%f:%l:%c:%*\\d:%*\\d:\ %t%[%^:]%#:%m,
             \%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
