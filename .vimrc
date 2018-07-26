@@ -6,7 +6,8 @@ let mapleader = "\<Space>"
 set number relativenumber
 
 " Settings
-set shellcmdflag=-ic "Use .bashrc
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
+set shell=bash\ --login
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd p
 set showcmd ic hls is
@@ -26,7 +27,7 @@ call plug#end()
 
 " File-specific settings"
 autocmd BufWritePost .vimrc source %
-autocmd BufWritePost .vimrc :!gitu-zvimconfig
+autocmd BufWritePost .vimrc :!git pull && git add . && git commit -m "Standard update" && git push 'https://Zach332:123shift@github.com/Zach332/zvimconfig.git'
 
 " Key Rebinding
 nmap <silent> <A-Left> <C-w>h
@@ -40,4 +41,3 @@ nnoremap <leader>r :tabprevious<CR>
 
 " Navigation
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
-
