@@ -37,7 +37,6 @@ nnoremap ; :
 vnoremap . :norm.<CR>
 nnoremap <leader>t :tabnext<CR>
 nnoremap <leader>r :tabprevious<CR>
-nnoremap <C-N> <C-T>
 
 " Navigation
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
