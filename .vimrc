@@ -31,6 +31,8 @@ autocmd BufWritePost .vimrc :!cd ~/Documents/Git/configs/ && git pull && git add
 " Key Rebinding
 nmap <silent> <A-Left> <C-w>h
 nmap <silent> <A-Right> <C-w>l
+nmap <silent> <A-Up> <C-w>k
+nmap <silent> <A-Down> <C-w>j
 imap {<CR> {<CR><BS>}<Esc>ko
 nnoremap : ;
 nnoremap ; :
@@ -45,5 +47,5 @@ nnoremap <leader>r :tabprevious<CR>
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 nnoremap <F9> :make<Return>:copen<Return>
-map <F10> :cprevious<Return>
-map <F11> :cnext<Return>
+nnoremap <F10> :cprevious<Return>
+nnoremap <F11> :cnext<Return>
