@@ -49,3 +49,9 @@ set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 nnoremap <F9> :make<Return>:copen<Return>
 nnoremap <F7> :cprevious<Return>
 nnoremap <F8> :cnext<Return>
+
+
+function! Run()
+	:!cd .. && cd.. && cd .. && cd..
+	:!java src.com.jou.main.Init
+endfunction
