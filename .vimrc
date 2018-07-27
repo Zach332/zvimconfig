@@ -44,7 +44,7 @@ nnoremap <leader>r :tabprevious<CR>
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
 
 " Other settings
-autocmd Filetype java set makeprg=javac\ % 
+autocmd Filetype java set makeprg=javac\ *.java 
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 nnoremap <F9> :make<Return>:copen<Return>
 nnoremap <F7> :cprevious<Return>
