@@ -52,6 +52,6 @@ nnoremap <F8> :cnext<Return>
 
 
 function! Run()
-	:!cd .. && cd.. && cd .. && cd..
+	:!cd .. && cd .. && cd .. && cd..
 	:!java src.com.jou.main.Init
 endfunction
