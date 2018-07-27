@@ -47,5 +47,5 @@ nnoremap <leader>r :tabprevious<CR>
 autocmd Filetype java set makeprg=javac\ %
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
 nnoremap <F9> :make<Return>:copen<Return>
-nnoremap <F10> :cprevious<Return>
-nnoremap <F11> :cnext<Return>
+nnoremap <F7> :cprevious<Return>
+nnoremap <F8> :cnext<Return>
