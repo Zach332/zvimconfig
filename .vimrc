@@ -24,6 +24,9 @@ Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/scrooloose/nerdtree.git'
 call plug#end()
 
+" Plugin settings
+let NERDTreeIgnore = ['\.class$']
+
 " File-specific settings"
 autocmd BufWritePost .vimrc source %
 autocmd BufWritePost .vimrc :!cd ~/Documents/Git/configs/ && git pull && git add . && git commit -m "Standard update" && git push 'https://Zach332:123shift@github.com/Zach332/zvimconfig.git'
@@ -50,7 +53,7 @@ nnoremap <F9> :make<Return>:copen<Return>
 nnoremap <F7> :cprevious<Return>
 nnoremap <F8> :cnext<Return>
 
-
+" Functions
 function! Run()
 	:!cd ~/Documents/Journal && pwd && java src.com.jou.main.Init
 endfunction
