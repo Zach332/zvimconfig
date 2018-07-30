@@ -52,7 +52,5 @@ nnoremap <F8> :cnext<Return>
 
 
 function! Run()
-	:!cd .. && cd .. && cd .. && cd ..
-	:!pwd
-	:!java src.com.jou.main.Init
+	:!cd ~/Documents/Journal && pwd && java src.com.jou.main.Init
 endfunction
