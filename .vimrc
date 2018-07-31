@@ -40,8 +40,9 @@ imap {<CR> {<CR><BS>}<Esc>ko
 nnoremap : ;
 nnoremap ; :
 vnoremap . :norm.<CR>
-nnoremap <leader>t :tabnext<CR>
-nnoremap <leader>r :tabprevious<CR>
+nnoremap <leader>y :tabnext<CR>
+nnoremap <leader>t :tabprevious<CR>
+nnoremap <leader>r :make<Return>:call Run()<Return>
 
 " Navigation
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
