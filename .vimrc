@@ -50,7 +50,7 @@ nnoremap <leader>r :make<Return>:call Run()<Return>
 " Other settings
 autocmd Filetype java set makeprg=javac\ *.java 
 set errorformat=%A%f:%l:\ %m,%-Z%p^,%-C%.%#
-nnoremap <F9> :make<Return>:copen<Return>
+nnoremap <F9> :wa<Return>:make<Return>:copen<Return>
 nnoremap <F7> :cprevious<Return>
 nnoremap <F8> :cnext<Return>
 
