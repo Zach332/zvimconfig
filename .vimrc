@@ -14,6 +14,7 @@ set scrolloff=5
 :nnoremap <silent> <CR> :nohlsearch<bar>:echo<CR>
 set tabstop=4
 set shiftwidth=4
+set mouse=a
 
 " Plugins
 call plug#begin('~/.vim/plugged')
