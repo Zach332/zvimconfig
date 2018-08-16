@@ -47,8 +47,8 @@ vnoremap . :norm.<CR>
 nnoremap <leader>y :tabnext<CR>
 nnoremap <leader>t :tabprevious<CR>
 nnoremap <leader>r :make<Return>:call Run()<Return>
-nnoremap <PageUp> 5k
-nnoremap <PageDown> 5j
+nnoremap <PageUp> 3k
+nnoremap <PageDown> 3j
 
 " Navigation
 " inoremap <Space><Tab> <Esc>/<++><CR>"_c4l
